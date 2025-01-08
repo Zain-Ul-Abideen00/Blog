@@ -7,9 +7,9 @@ import rehypeSlug from "rehype-slug"
 import remarkGfm from "remark-gfm"
 
 const codeOptions = {
-  theme: 'github-dark',
+  theme: "night-owl",
   grid: false,
-}
+};
 
 // Define the blog schema
 const blog = s
@@ -17,7 +17,7 @@ const blog = s
     title: s.string(),
     publishedAt: s.isodate(),
     updatedAt: s.isodate(),
-    description: s.string(), 
+    description: s.string(),
     image: s.image(),
     isPublished: s.boolean().default(true),
     author: s.string(),
